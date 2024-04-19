@@ -1983,3 +1983,7 @@
 
 !2024-04-19 test.com^
 !2024-04-19 some.test.com^
+!2024-04-19 test.com^
+!2024-04-19 test1.com/en^
+!2024-04-19 http://test.com/bg^
+!2024-04-19 ||www.test1.com^

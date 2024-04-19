@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Function to show progress during git pull
 git_pull_with_progress() {

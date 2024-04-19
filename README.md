@@ -1,5 +1,6 @@
 # gambling
-gambling AdGuard blocking list
+## Gambling blocklist compatible with AdGuard
+
 
 # List of websites through which gambling is organised by persons not licensed under the Gambling Act 
 

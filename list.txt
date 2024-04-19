@@ -1309,7 +1309,6 @@
 ||solcasino2021.com^
 ||solcasino1075.com^
 ||solcasino1081.com^
-||solcasino355.com^
 ||slotmadness.com^
 ||slotjerry.com^
 ||slottojam22.com^
@@ -1885,7 +1884,6 @@
 ||i-ggbet.com^
 ||click-ggbet.com^
 ||ggbetcenter.net^
-||ggbetcenter.net^
 ||ggbet10.com^
 ||ggbet15.com^
 ||ggbet16.com^
@@ -1975,9 +1973,13 @@
 ||theredlioncasinocom.com^
 ||lp.theredlioncasino.com^
 ||redlion.casino^
-||redlion.casino^
 ||whamoo.com^
 ||topsport.lt^
 ||vierklee-wetten.com^
 ||spincitya.com^
 
+||test2.com^  #2024-04-19
+||test3.com^  #2024-04-19
+||test.com^  #2024-04-19
+||test1.com^  #2024-04-19
+||test4.com^  #2024-04-19

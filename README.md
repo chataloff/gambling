@@ -1,10 +1,10 @@
 # gambling
 gambling AdGuard blocking list
 
-# Списък на интернет страниците, чрез които се организират хазартни игри от лица, които не притежават лиценз по Закона за хазарта 
-
 # List of websites through which gambling is organised by persons not licensed under the Gambling Act 
+
+Списък на интернет страниците, чрез които се организират хазартни игри от лица, които не притежават лиценз по Закона за хазарта
 
 # https://nra.bg
 
-# Съгласно чл. 17, ал. 2 от ЗХ НАП идентифицира интернет страници, чрез които се организират хазартни игри от лица, които нямат действащ лиценз по закона. В случай че имате достъп до сайт от посочения списък и имате възможност да участвате в онлайн залагане чрез тази интернет страница, това означава, че вашият доставчик на интернет не е изпълнил разпореждане на Софийския районен съд за спиране достъпа до сайта, съгласно чл. 17, ал. 6 от ЗХ, за което подлежи на санкция. Ако попаднете в такава ситуация, незабавно уведомете НАП, като е необходимо да посочите сайта и вашия доставчик на интернет. Информация можете да подадете на адрес:  infocenter@nra.bg .
+In accordance with Article 17(2) of the Gambling Act, the NRA identifies websites through which gambling is organised by persons who do not have a valid licence under this Act. In case you have access to a website from the above list and you can participate in online betting through this website, this means that your ISP has not complied with an order of the Sofia District Court to suspend access to the website pursuant to Article 17(6) of the Gambling Act, for which it is subject to a penalty. If you find yourself in such a situation, notify the NRA immediately, specifying the website and your ISP. The information can be submitted to: infocenter@nra.bg .

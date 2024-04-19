@@ -17,7 +17,7 @@ git_push_with_progress() {
 }
 
 # Pull changes from the repository with progress
-git_pull_with_progress <repository_url>
+git_pull_with_progress git@github.com:chataloff/gambling.git
 
 # Prompt user for external file path
 echo "Please provide the path to the external file:"
@@ -45,11 +45,11 @@ while IFS= read -r line; do
     modified_line="!$current_date $modified_line"
     
     # Insert the modified line into the cloned file
-    echo "$modified_line" >> cloned_file.txt
+    echo "$modified_line" >> list.txt
 done < "$external_file_path"
 
 # Add changes to Git
-git add cloned_file.txt
+git add list.txt
 
 # Commit changes with current date as comment
 current_date=$(date +"%Y-%m-%d")

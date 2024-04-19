@@ -17,7 +17,7 @@ def git_push_with_progress():
         print("Pushing...")
 
 # Pull changes from the repository with progress
-repo_url = "<repository_url>"
+repo_url = "git@github.com:chataloff/gambling.git"
 git_pull_with_progress(repo_url)
 
 # Prompt user for external file path
@@ -47,7 +47,7 @@ for line in lines:
     modified_lines.append(modified_line)
 
 # Write modified lines to cloned file
-cloned_file_path = "cloned_file.txt"
+cloned_file_path = "list.txt"
 with open(cloned_file_path, 'w') as file:
     file.write('\n'.join(modified_lines))
 

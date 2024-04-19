@@ -1981,3 +1981,5 @@
 ||vierklee-wetten.com^
 ||spincitya.com^
 
+!2024-04-19 test.com^
+!2024-04-19 some.test.com^

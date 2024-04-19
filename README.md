@@ -7,7 +7,7 @@ gambling AdGuard blocking list
 
 # https://nra.bg
 
-Source list: [ Списък на интернет страниците, чрез които се организират хазартни игри от лица, които не притежават лиценз по Закона за хазарта (Blacklist) ] (https://nra.bg/wps/portal/nra/registers-i-spisuci/Spisuci/page.Spisuci-na-internet-stranicite-chrez-koito-se-organizirat-hazarni-igri/84d84f57-6e98-40fd-b80a-4597f3a0132a/).
+Source list: [Списък на интернет страниците, чрез които се организират хазартни игри от лица, които не притежават лиценз по Закона за хазарта (Blacklist)](https://nra.bg/wps/portal/nra/registers-i-spisuci/Spisuci/page.Spisuci-na-internet-stranicite-chrez-koito-se-organizirat-hazarni-igri/84d84f57-6e98-40fd-b80a-4597f3a0132a/).
 
 This site was built using [GitHub Pages](https://pages.github.com/).
 

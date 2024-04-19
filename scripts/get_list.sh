@@ -54,6 +54,10 @@ while IFS= read -r line; do
     echo "$modified_line" >> list.txt
 done < "$external_file_path"
 
+# Start cleanup 
+echo "Removing External file..."
+rm  "$external_file_path"
+
 # Removing duplicates
 awk '!seen[$0]++' "list.txt" > tmp_list.txt && mv tmp_list.txt list.txt
 

@@ -31,22 +31,31 @@ fi
 
 # Read external file
 while IFS= read -r line; do
-    # Replace HTTP:// and https:// with "||"
-    modified_line=$(echo "$line" | sed 's/HTTP:\/\//||/g; s/https:\/\//||/g')
-    
+    # Remove www from the URL
+    modified_line=$(echo "$line" | sed 's/.*www.//; s/.*WWW.//')
+
+    # Remove HTTP:// and https:// 
+    modified_line=$(echo "$modified_line" | sed 's~http[s]*://~~g; s~HTTP[S]*://~~g')
+
     # Remove "/" and reset from the end of each line
-    modified_line=$(echo "$modified_line" | sed 's/\/$//g')
+    modified_line=$(echo "$modified_line" | sed 's/\/.*//g')
     
+    # Add || at the beggining of the line 
+    modified_line=$(echo "$modified_line" | sed 's/^/||/') 
+   
     # Add "^" at the end of each line
     modified_line="${modified_line}^"
     
     # Insert current date in format "!$date"
     current_date=$(date +"%Y-%m-%d")
-    modified_line="!$current_date $modified_line"
+    modified_line="$modified_line  #$current_date"
     
     # Insert the modified line into the cloned file
     echo "$modified_line" >> list.txt
 done < "$external_file_path"
+
+# Removing duplicates
+awk '!seen[$0]++' "list.txt" > tmp_list.txt && mv tmp_list.txt list.txt
 
 # Add changes to Git
 git add list.txt
@@ -56,7 +65,7 @@ current_date=$(date +"%Y-%m-%d")
 git commit -m "Updated data as of $current_date"
 
 # Push changes to remote repository
-git_push_with_progress origin master
+git_push_with_progress #origin master
 
 # Show output/progress of git push
 echo "Push completed."

@@ -35,15 +35,19 @@ with open(external_file_path, 'r') as file:
 # Modify lines
 modified_lines = []
 for line in lines:
+    # Remove www. from the link
+    modified_line = line.rstrip("www.")
+    modified_line = line.rstrip("WWW.")
     # Replace HTTP:// and https:// with "||"
-    modified_line = line.replace("HTTP://", "||").replace("https://", "||")
+    modified_line = line.replace("http://", "||").replace("https://", "||")
     # Remove "/" and reset from the end of each line
-    modified_line = modified_line.rstrip("/")
+    #modified_line = line.split("/", 1)[0]
+    #modified_line = modified_line.rstrip("/")
     # Add "^" at the end of each line
     modified_line += "^"
     # Insert current date in format "!$date"
     current_date = date.today().strftime("%Y-%m-%d")
-    modified_line = f"!{current_date} {modified_line}"
+    modified_line = f"{modified_line}	#{current_date}"
     modified_lines.append(modified_line)
 
 # Write modified lines to cloned file

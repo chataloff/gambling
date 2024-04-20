@@ -1978,14 +1978,3 @@
 ||vierklee-wetten.com^
 ||spincitya.com^
 
-||test2.com^  #2024-04-19
-||test3.com^  #2024-04-19
-||test.com^  #2024-04-19
-||test1.com^  #2024-04-19
-||test4.com^  #2024-04-19
-||test_d.com^  #2024-04-19
-||big_test.com^  #2024-04-19
-||newtest.bg^  #2024-04-19
-||some_test.uk^  #2024-04-19
-||test200_jp.com^  #2024-04-19
-||testtest.bg^  #2024-04-19

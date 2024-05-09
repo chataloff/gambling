@@ -29,6 +29,9 @@ if [ ! -f "$external_file_path" ]; then
     exit 1
 fi
 
+# Remove empty lines from the source file
+grep -v '^[[:space:]]*$' "$external_file_path" > temp_source.txt
+
 # Read external file
 while IFS= read -r line; do
     # Remove www from the URL
@@ -52,14 +55,15 @@ while IFS= read -r line; do
     
     # Insert the modified line into the cloned file
     echo "$modified_line" >> temp_list.txt
-done < "$external_file_path"
+done < temp_source.txt
 
-# Remove empty lines
-grep -v '^[[:space:]]*$' temp_list.txt > list.txt
+# Clean up temporary source file
+rm temp_source.txt
 
+# Rename temporary list file to the final destination file
+mv temp_list.txt list.txt
 # Start cleanup 
 # Clean up temporary file
-rm temp_list.txt
 echo "Removing External file..."
 rm  "$external_file_path"
 

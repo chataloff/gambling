@@ -1979,3 +1979,6 @@
 ||spincitya.com^
 
 ||spinarium3.com^  #2024-05-09
+||spinarium1.com^  #2024-05-09
+||spinarium.com^  #2024-05-09
+||spinarium2.com^  #2024-05-09

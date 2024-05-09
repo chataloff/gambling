@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/usr/local/bin/bash
 
 # ANSI color codes
-RED='\033[0;31m'
-NC='\033[0m' # No Color
+RED="\[\033[0;31m\]"
+NC="\[\033[0m\]" # No Color
 
 # Function to show progress during git pull
 git_pull_with_progress() {
@@ -40,7 +40,7 @@ while getopts "ad:" option; do
     case "$option" in
         a) action="add";;
         d) action="delete";;
-        *) echo "${RED}Invalid option${NC}"; print_help; exit 1;;
+        *) echo "'$RED'Invalid option'$NC'"; print_help; exit 1;;
     esac
 done
 
@@ -57,25 +57,33 @@ if [ ! -f "$external_file_path" ]; then
     exit 1
 fi
 
-# Modify the content of the source file and remove empty lines
-while IFS= read -r line; do
-    if [ -n "$line" ]; then  # Skip empty lines
-        if [ "$action" = "delete" ]; then
-            # Delete entries if action is 'delete'
-            sed -i "/$line/d" list.txt
-        else
-            # Modify the line if action is 'add'
-            modified_line=$(echo "$line" | sed -e 's/.*www.//' -e 's/.*WWW.//' -e 's~http[s]*://~~g' -e 's~HTTP[S]*://~~g' -e 's/\/.*//g' -e 's/^/||/')"^"
-            
-            # Insert current date
-            current_date=$(date +"%Y-%m-%d")
-            modified_line="$modified_line  #$current_date"
-            
-            echo "$modified_line"
-            echo "$modified_line" >> list.txt
-        fi
-    fi
-done < "$external_file_path"
+# Add or delete lines based on the provided action
+case "$action" in
+    add)
+        # Add the lines from the input file
+        while IFS= read -r line; do
+            if [ -n "$line" ]; then  # Skip empty lines
+                # Modify the line
+                modified_line=$(echo "$line" | sed -e 's/.*www.//' -e 's/.*WWW.//' -e 's~http[s]*://~~g' -e 's~HTTP[S]*://~~g' -e 's/\/.*//g' -e 's/^/||/')"^"
+                
+                # Insert current date
+                current_date=$(date +"%Y-%m-%d")
+                modified_line="$modified_line  #$current_date"
+                
+                echo "$modified_line"
+                echo "$modified_line" >> list.txt
+            fi
+        done < "$external_file_path"
+        ;;
+    delete)
+        # Delete the lines provided in the input file
+        while IFS= read -r line; do
+            if [ -n "$line" ]; then  # Skip empty lines
+                sed -i "/$line/d" list.txt
+            fi
+        done < "$external_file_path"
+        ;;
+esac
 
 # Remove duplicates
 awk '!seen[$0]++' "list.txt" > tmp_list.txt && mv tmp_list.txt list.txt

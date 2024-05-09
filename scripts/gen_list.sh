@@ -51,10 +51,15 @@ while IFS= read -r line; do
     modified_line="$modified_line  #$current_date"
     
     # Insert the modified line into the cloned file
-    echo "$modified_line" >> list.txt
+    echo "$modified_line" >> temp_list.txt
 done < "$external_file_path"
 
+# Remove empty lines
+grep -v '^[[:space:]]*$' temp_list.txt > list.txt
+
 # Start cleanup 
+# Clean up temporary file
+rm temp_list.txt
 echo "Removing External file..."
 rm  "$external_file_path"
 

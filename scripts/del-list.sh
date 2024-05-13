@@ -38,9 +38,9 @@ echo "Reading external file..."
 # Read external file
 while IFS= read -r domain; do
     echo "Processing domain: $domain"
-    # Remove matching line from link.txt
-    echo "Removing domain $domain from link.txt..."
-    awk -v domain="$domain" '!index($0, "||" domain "^ #")' link.txt > "$tmp_file" && mv "$tmp_file" link.txt
+    # Remove matching line from list.txt
+    echo "Removing domain $domain from list.txt..."
+    awk -v domain="$domain" '!index($0, "||" domain "^ #")' list.txt > "$tmp_file" && mv "$tmp_file" list.txt
 done < "$external_file_path"
 
 # Start cleanup 
@@ -50,12 +50,12 @@ echo "Removing External file..."
 
 # Add changes to Git
 echo "Adding changes to Git..."
-git add link.txt
+git add list.txt
 
 # Commit changes with current date as comment
 current_date=$(date +"%Y-%m-%d")
 echo "Committing changes..."
-git commit -m "Updated link.txt to remove entries as of $current_date"
+git commit -m "Updated list.txt to remove entries as of $current_date"
 
 # Push changes to remote repository
 echo "Pushing changes to the remote repository..."

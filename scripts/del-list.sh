@@ -40,7 +40,7 @@ while IFS= read -r domain; do
     echo "Processing domain: $domain"
     # Remove matching line from list.txt
     echo "Removing domain $domain from list.txt..."
-    sed -i.bak "/||$domain^ #/d" list.txt
+    sed -i .bak "/||${domain}\^ #/d" list.txt
 done < "$external_file_path"
 
 # Remove backup files created by sed
@@ -48,7 +48,7 @@ rm -f list.txt.bak
 
 # Remove duplicate entries from list.txt
 echo "Removing duplicate entries from list.txt..."
-sed -i.bak -e 'G;:loop' -e '/\n\(.*\)\n\1$/!tend' -e 's/\(.*\)\n\(.*\)\n\1$/\1\n\2/;tloop' -e ':end' -e 's/^\(.*\)\n\(.*\)$/\1/;P;D' list.txt
+sed -i .bak -e :a -e 's/\(.*\)\n\1/\1/' -e ta list.txt
 
 # Remove backup files created by sed
 rm -f list.txt.bak

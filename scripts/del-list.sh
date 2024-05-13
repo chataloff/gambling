@@ -43,6 +43,10 @@ while IFS= read -r domain; do
     awk -v domain="$domain" '!index($0, "||" domain "^ #")' list.txt > "$tmp_file" && mv "$tmp_file" list.txt
 done < "$external_file_path"
 
+# Remove duplicate entries from list.txt
+echo "Removing duplicate entries from list.txt..."
+awk '!seen[$0]++' list.txt > "$tmp_file" && mv "$tmp_file" list.txt
+
 # Start cleanup 
 # Clean up external file
 echo "Removing External file..."

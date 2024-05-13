@@ -22,9 +22,11 @@ git_pull_with_progress git@github.com:chataloff/gambling.git
 # Prompt user for external file path
 echo "Please provide the path to the external file:"
 read -r external_file_path
+echo "External file path: $external_file_path"
 
 # Create a temporary file for editing
 tmp_file=$(mktemp)
+echo "Temporary file path: $tmp_file"
 
 # Check if the file exists
 if [ ! -f "$external_file_path" ]; then
@@ -35,9 +37,10 @@ fi
 echo "Reading external file..."
 # Read external file
 while IFS= read -r domain; do
-    # Remove matching line from list.txt
-    echo "Removing domain $domain from list.txt..."
-    awk -v domain="$domain" '!index($0, "||" domain "^ #")' list.txt > "$tmp_file" && mv "$tmp_file" list.txt 
+    echo "Processing domain: $domain"
+    # Remove matching line from link.txt
+    echo "Removing domain $domain from link.txt..."
+    awk -v domain="$domain" '!index($0, "||" domain "^ #")' link.txt > "$tmp_file" && mv "$tmp_file" link.txt
 done < "$external_file_path"
 
 # Start cleanup 
@@ -47,7 +50,7 @@ echo "Removing External file..."
 
 # Add changes to Git
 echo "Adding changes to Git..."
-git add list.txt
+git add link.txt
 
 # Commit changes with current date as comment
 current_date=$(date +"%Y-%m-%d")

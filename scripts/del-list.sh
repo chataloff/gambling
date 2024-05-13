@@ -23,6 +23,9 @@ git_pull_with_progress git@github.com:chataloff/gambling.git
 echo "Please provide the path to the external file:"
 read -r external_file_path
 
+# Create a temporary file for editing
+tmp_file=$(mktemp)
+
 # Check if the file exists
 if [ ! -f "$external_file_path" ]; then
     echo "Error: External file does not exist."
@@ -30,44 +33,22 @@ if [ ! -f "$external_file_path" ]; then
 fi
 
 # Read external file
-while IFS= read -r line; do
-    # Remove www from the URL
-    modified_line=$(echo "$line" | sed 's/.*www.//; s/.*WWW.//')
-
-    # Remove HTTP:// and https:// 
-    modified_line=$(echo "$modified_line" | sed 's~http[s]*://~~g; s~HTTP[S]*://~~g')
-
-    # Remove "/" and reset from the end of each line
-    modified_line=$(echo "$modified_line" | sed 's/\/.*//g')
-    
-    # Add || at the beggining of the line 
-    modified_line=$(echo "$modified_line" | sed 's/^/||/') 
-   
-    # Add "^" at the end of each line
-    modified_line="${modified_line}^"
-    
-    # Insert current date in format "!$date"
-    current_date=$(date +"%Y-%m-%d")
-    modified_line="$modified_line  #$current_date"
-    
-    # Remove the modified line from the list file
-    sed -i "/^$modified_line/d" list.txt
+while IFS= read -r domain; do
+    # Remove matching line from link.txt
+    awk -v domain="$domain" '!index($0, "||" domain "^ #")' link.txt > "$tmp_file" && mv "$tmp_file" link.txt
 done < "$external_file_path"
 
 # Start cleanup 
 # Clean up external file
 echo "Removing External file..."
-rm "$external_file_path"
-
-# Remove duplicates
-awk '!seen[$0]++' "list.txt" > tmp_list.txt && mv tmp_list.txt list.txt
+#rm "$external_file_path"
 
 # Add changes to Git
-git add list.txt
+git add link.txt
 
 # Commit changes with current date as comment
 current_date=$(date +"%Y-%m-%d")
-git commit -m "Updated data as of $current_date"
+git commit -m "Updated link.txt to remove entries as of $current_date"
 
 # Push changes to remote repository
 git_push_with_progress #origin master

@@ -35,7 +35,7 @@ fi
 echo "Reading external file..."
 # Read external file
 while IFS= read -r domain; do
-    # Remove matching line from link.txt
+    # Remove matching line from list.txt
     echo "Removing domain $domain from link.txt..."
     awk -v domain="$domain" '!index($0, "||" domain "^ #")' link.txt > "$tmp_file" && mv "$tmp_file" link.txt
 done < "$external_file_path"

@@ -1,8 +1,4 @@
-#!/usr/local/bin/bash
-
-# ANSI color codes
-RED="\[\033[0;31m\]"
-NC="\[\033[0m\]" # No Color
+#!/bin/sh
 
 # Function to show progress during git pull
 git_pull_with_progress() {
@@ -30,9 +26,9 @@ print_help() {
 }
 
 # Check if any command-line arguments are provided
-if [ "$#" -eq 0 ]; then
+if [ "$#" -lt 2 ]; then
     print_help
-    exit 0
+    exit 1
 fi
 
 # Parse command line options
@@ -40,20 +36,33 @@ while getopts "ad:" option; do
     case "$option" in
         a) action="add";;
         d) action="delete";;
-        *) echo "'$RED'Invalid option'$NC'"; print_help; exit 1;;
+        *) echo "Invalid option"; print_help; exit 1;;
     esac
 done
 
 # Shift command line arguments to access remaining parameters
 shift $((OPTIND - 1))
 
-# Prompt user for external file path
-echo "Please provide the path to the external file:"
-read -r external_file_path
+# Check if action is provided
+if [ -z "$action" ]; then
+    echo "Error: Action (-a or -d) is mandatory."
+    print_help
+    exit 1
+fi
+
+# Check if external file path is provided
+if [ -z "$1" ]; then
+    echo "Error: External file path is missing."
+    print_help
+    exit 1
+fi
+
+# Set external file path
+external_file_path="$1"
 
 # Check if the file exists
 if [ ! -f "$external_file_path" ]; then
-    echo "${RED}Error: External file does not exist.${NC}"
+    echo "Error: External file does not exist."
     exit 1
 fi
 
@@ -70,16 +79,20 @@ case "$action" in
                 current_date=$(date +"%Y-%m-%d")
                 modified_line="$modified_line  #$current_date"
                 
-                echo "$modified_line"
-                echo "$modified_line" >> list.txt
+                # Check if the line already exists in the list file
+                if ! grep -qF "$modified_line" list.txt; then
+                    echo "$modified_line"
+                    echo "$modified_line" >> list.txt
+                fi
             fi
         done < "$external_file_path"
         ;;
     delete)
+        echo "Deleting lines..."
         # Delete the lines provided in the input file
         while IFS= read -r line; do
             if [ -n "$line" ]; then  # Skip empty lines
-                sed -i "/$line/d" list.txt
+                sed -i "/^||$line/d" list.txt
             fi
         done < "$external_file_path"
         ;;

@@ -40,7 +40,7 @@ while IFS= read -r domain; do
     echo "Processing domain: $domain"
     # Remove matching line from list.txt
     echo "Removing domain $domain from list.txt..."
-    sed -i  .bak '' "/||${domain}\^ #/d" list.txt
+    sed -i '' .bak  "/||${domain}\^ #/d" list.txt
 done < "$external_file_path"
 
 # Remove backup files created by sed

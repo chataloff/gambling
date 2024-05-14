@@ -56,7 +56,7 @@ rm -f list.txt.bak
 # Start cleanup 
 # Clean up external file
 echo "Removing External file..."
-#rm "$external_file_path"
+rm "$external_file_path"
 
 # Add changes to Git
 echo "Adding changes to Git..."

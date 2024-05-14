@@ -2128,8 +2128,5 @@
 ||izzicasino1904.com^  #2024-05-09
 ||izzicasino1904^  #2024-05-09
 ||lottokings.com^  #2024-05-09
-||test1.com^  #2024-05-14
-||test2.com^  #2024-05-14
-||test3.com^  #2024-05-14
 ||test4.com^  #2024-05-14
 ||test5.com^  #2024-05-14

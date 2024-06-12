@@ -2164,99 +2164,97 @@
 ||windetta10.com^
 ||windetta11.com^
 ||bizzocasino.com^
-||bizzocasino.website^  #2024-06-10
-||bizzoonline.com^  #2024-06-10
-||bizzocasinoapp.com^  #2024-06-10
-||bizzocasino.co.nz^  #2024-06-10
-||casinobizzo.com^  #2024-06-10
-||bizzocasino.eu^  #2024-06-10
-||bizzocasinologin.com^  #2024-06-10
-||bizzocasinospain.com^  #2024-06-10
-||bizzocasino.net^  #2024-06-10
-||bizzocasinoau.bet^  #2024-06-10
-||bizzocasino.eu.com^  #2024-06-10
-||bizzocasino.ca^  #2024-06-10
-||bizzocasino-gr.com^  #2024-06-10
-||bizzocasino.org.gr^  #2024-06-10
-||unislots.com^  #2024-06-10
-||eclipsecasinonew.com^  #2024-06-10
-||eclipsecasino.com^  #2024-06-10
-||betlive.com^  #2024-06-10
-||viperspin.com^  #2024-06-10
-||viperspin1.com^  #2024-06-10
-||viperspin2.com^  #2024-06-10
-||viperspin5.com^  #2024-06-10
-||viperspin20.com^  #2024-06-10
-||octocasino.com^  #2024-06-10
-||rollino.co^  #2024-06-10
-||rollino1.co^  #2024-06-10
-||rollino2.co^  #2024-06-10
-||gospin.io^  #2024-06-10
-||kingamo.com^  #2024-06-10
-||lionspin.com^  #2024-06-10
-||rocketwin.io^  #2024-06-10
-||luckyreels.io^  #2024-06-10
-||pumacasino.io^  #2024-06-10
-||spinspace.io^  #2024-06-10
-||forzza.com^  #2024-06-10
-||forzza1.com^  #2024-06-10
-||forzza2.com^  #2024-06-10
-||forzza3.com^  #2024-06-10
-||izzicasino1040.com^  #2024-06-10
-||izzicasino160.com^  #2024-06-10
-||izzicasino-24.com^  #2024-06-10
-||organizator-pr.ru^  #2024-06-10
-||mapademanaus.com^  #2024-06-10
-||sbpt.ru^  #2024-06-10
-||pechetandrobb.ca^  #2024-06-10
-||bcpolitics.ca^  #2024-06-10
-||wishcasino.io^  #2024-06-10
-||wintomato.com^  #2024-06-10
-||wintomato1.com^  #2024-06-10
-||casiqo.com^  #2024-06-10
-||flush.com^  #2024-06-10
-||spassino.com^  #2024-06-10
-||spassino1.com^  #2024-06-10
-||winspirit.com^  #2024-06-10
-||winspirit1.com^  #2024-06-10
-||winspirit3.com^  #2024-06-10
-||winspirit4.com^  #2024-06-10
-||winspirit5.com^  #2024-06-10
-||winspirit6.com^  #2024-06-10
-||winspirit7.com^  #2024-06-10
-||winspirit8.com^  #2024-06-10
-||winspirit9.com^  #2024-06-10
-||winspirit10.com^  #2024-06-10
-||win-spirit.site^  #2024-06-10
-||nanogames.io^  #2024-06-10
-||7slots-club.com^  #2024-06-10
-||7slots.casino^  #2024-06-10
-||spinsbro.com^  #2024-06-10
-||spinsbro1.com^  #2024-06-10
-||spinsbro2.com^  #2024-06-10
-||spinsbro4.com^  #2024-06-10
-||spinsbro5.com^  #2024-06-10
-||spinsbro6.com^  #2024-06-10
-||spinsbro7.com^  #2024-06-10
-||playkasino.com^  #2024-06-10
-||web.3dice.com^  #2024-06-10
-||everumcasino.com^  #2024-06-10
-||everumcasino.eu^  #2024-06-10
-||everumcasino18.eu^  #2024-06-10
-||cannonbet.com^  #2024-06-10
-||dinamobet.com^  #2024-06-10
-||dinamobet810.com^  #2024-06-10
-||jacksclub.io^  #2024-06-10
-||casinozer.eu^  #2024-06-10
-||cazino-zer.fr^  #2024-06-10
-||casinozer.co^  #2024-06-10
-||casinozer.bet^  #2024-06-10
-||casinozer.app^  #2024-06-10
-||exclusivecasinonew.com^  #2024-06-10
-||livecasino.io^  #2024-06-10
-||lottoland.com^  #2024-06-10
-||egbs.live^  #2024-06-10
-||egamingbet.net^  #2024-06-10
+||bizzocasino.website^
+||bizzoonline.com^
+||bizzocasinoapp.com^
+||bizzocasino.co.nz^
+||casinobizzo.com^
+||bizzocasino.eu^
+||bizzocasinologin.com^
+||bizzocasinospain.com^
+||bizzocasino.net^
+||bizzocasinoau.bet^
+||bizzocasino.eu.com^
+||bizzocasino.ca^
+||bizzocasino-gr.com^
+||bizzocasino.org.gr^
+||unislots.com^
+||eclipsecasinonew.com^
+||eclipsecasino.com^
+||betlive.com^
+||viperspin.com^
+||viperspin1.com^
+||viperspin2.com^
+||viperspin5.com^
+||viperspin20.com^
+||octocasino.com^
+||rollino.co^
+||rollino1.co^
+||rollino2.co^
+||gospin.io^
+||kingamo.com^
+||lionspin.com^
+||rocketwin.io^
+||luckyreels.io^
+||pumacasino.io^
+||spinspace.io^
+||forzza.com^
+||forzza1.com^
+||forzza2.com^
+||forzza3.com^
+||izzicasino1040.com^
+||izzicasino160.com^
+||izzicasino-24.com^
+||organizator-pr.ru^
+||mapademanaus.com^
+||sbpt.ru^
+||pechetandrobb.ca^
+||bcpolitics.ca^
+||wishcasino.io^
+||wintomato.com^
+||wintomato1.com^
+||casiqo.com^
+||flush.com^
+||spassino.com^
+||spassino1.com^
+||winspirit.com^
+||winspirit1.com^
+||winspirit3.com^
+||winspirit4.com^
+||winspirit5.com^
+||winspirit6.com^
+||winspirit7.com^
+||winspirit8.com^
+||winspirit9.com^
+||winspirit10.com^
+||win-spirit.site^
+||nanogames.io^
+||7slots-club.com^
+||7slots.casino^
+||spinsbro.com^
+||spinsbro1.com^
+||spinsbro2.com^
+||spinsbro4.com^
+||spinsbro5.com^
+||spinsbro6.com^
+||spinsbro7.com^
+||playkasino.com^
+||web.3dice.com^
+||everumcasino.com^
+||everumcasino.eu^
+||everumcasino18.eu^
+||cannonbet.com^
+||dinamobet.com^
+||dinamobet810.com^
+||jacksclub.io^
+||casinozer.eu^
+||cazino-zer.fr^
+||casinozer.co^
+||casinozer.bet^
+||casinozer.app^
+||exclusivecasinonew.com^
+||livecasino.io^
+||lottoland.com^
+||egbs.live^
+||egamingbet.net^
 ||egb.com^
-||test.com^  #
-||test1.com^

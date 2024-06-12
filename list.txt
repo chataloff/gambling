@@ -2259,3 +2259,4 @@
 ||egbs.live^  #2024-06-10
 ||egamingbet.net^  #2024-06-10
 ||egb.com^
+||test.com^  #

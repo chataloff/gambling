@@ -36,7 +36,7 @@ while IFS= read -r line; do
         modified_line=$(echo "$line" | sed -e 's/.*www.//' -e 's/.*WWW.//' -e 's~http[s]*://~~g' -e 's~HTTP[S]*://~~g' -e 's/\/.*//g' -e 's/^/||/')"^"
         
         # Insert current date
-        current_date=$(date +"%Y-%m-%d")
+        #current_date=$(date +"%Y-%m-%d")
         modified_line="$modified_line  #$current_date"
         
         echo "$modified_line"

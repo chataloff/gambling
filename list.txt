@@ -2044,7 +2044,7 @@
 ||grand-casino80.com^  #2024-05-09
 ||grand-casino234.com^  #2024-05-09
 ||grand-casino890.com^  #2024-05-09
-||vulkan.bet^  #2024-05-09
+||vulkan.bet^
 ||vulkan65.bet^  #2024-05-09
 ||vulkan66.bet^  #2024-05-09
 ||vulkan1.bet^  #2024-05-09
@@ -2258,4 +2258,4 @@
 ||lottoland.com^  #2024-06-10
 ||egbs.live^  #2024-06-10
 ||egamingbet.net^  #2024-06-10
-||egb.com^  #2024-06-10
+||egb.com^

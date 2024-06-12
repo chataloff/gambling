@@ -37,7 +37,7 @@ while IFS= read -r line; do
         
         # Insert current date
         #current_date=$(date +"%Y-%m-%d")
-        modified_line="$modified_line  #$current_date"
+        modified_line="$modified_line"
         
         echo "$modified_line"
     fi

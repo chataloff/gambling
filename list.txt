@@ -3751,16 +3751,16 @@
 ||flagman-casino1.com^
 ||flagman-casino1.com ^
 ||flagmancasino16.com^
-||flagmancasino17.com,^
+||flagmancasino17.com^
 ||flagmancasino18.com^
-||irwincasino99.com,^
-||irwincasino14.com,^
-||irwincasino14.com, ^
-||irwincasino16.com,^
+||irwincasino99.com^
+||irwincasino14.com^
+||irwincasino14.com^
+||irwincasino16.com^
 ||irwincasino17.com^
-||lex-casino2014.com,^
-||lex-casino2014.com, ^
-||lex-casino52.com,^
+||lex-casino2014.com^
+||lex-casino2014.com^
+||lex-casino52.com^
 ||lex-casino2013.com^
 ||19bdmbet27.com^
 ||94bdmbet71.com^
@@ -3895,7 +3895,7 @@
 ||vavada-croatia.com^
 ||vavadapln.com^
 ||spinrodeo.us^
-||spinrodeo.us ^
+||spinrodeo.us^
 ||hitnspin237.com^
 ||57hitnspin.com^
 ||hitnspin-kasyno.pl^

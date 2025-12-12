@@ -1203,7 +1203,7 @@
 ||casoo22.com^
 ||ybet.com^
 ||fizzslots.com^
-||wolfycasino.com,^
+||wolfycasino.com^
 ||wolfycasino3.com^
 ||wolfycasino.com^
 ||xcasino89.com^
@@ -1312,7 +1312,7 @@
 ||slotmadness.com^
 ||slotjerry.com^
 ||slottojam22.com^
-||slottojam55.com,^
+||slottojam55.com^
 ||slottojam55.com^
 ||wizary.com^
 ||cbet.gg^

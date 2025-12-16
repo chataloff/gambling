@@ -1977,7 +1977,6 @@
 ||topsport.lt^
 ||vierklee-wetten.com^
 ||spincitya.com^
-||spinarium3.com^ 
 ||spinarium1.com^ 
 ||spinarium.com^
 ||spinarium2.com^
@@ -2129,7 +2128,6 @@
 ||lottokings.com^
 ||test.com^
 ||spinarium3.com^
-||spinarium1.com^
 ||winlegends.com^
 ||winlegends1.com^
 ||winlegends3.com^
@@ -2915,7 +2913,6 @@
 ||superbetin1319.com^
 ||superbetin1320.com^
 ||bounty-casino44.com^
-||bounty-casino44.com ^
 ||bounty-casino16.com^
 ||bounty-casino20.com^
 ||bounty-casino.com^
@@ -2939,7 +2936,6 @@
 ||bgvavada.com^
 ||ua-vavada.com^
 ||vavada-bgr.com^
-||vavada-bgr.com  ^
 ||jack-playcard.com^
 ||jack-casino.com^
 ||jack-poker.com^
@@ -3730,7 +3726,6 @@
 ||m4a62b5.lucky-gambler.net^
 ||casino-spin-city.com^
 ||spin-city-casino.site^
-||spin-city-casino.site ^
 ||spincity-casinos.com^
 ||m8a6c38.gamble-risk.net^
 ||icecasino9.com^
@@ -3749,7 +3744,6 @@
 ||monrocasino607.com^
 ||flagman.casino^
 ||flagman-casino1.com^
-||flagman-casino1.com ^
 ||flagmancasino16.com^
 ||flagmancasino17.com^
 ||flagmancasino18.com^
@@ -3811,7 +3805,6 @@
 ||voxcasino-2025pl.com^
 ||crownsspins.com^
 ||crownzino.com^
-||crownzino.com ^
 ||21nv.casino^
 ||nvcasino-bg.pro^
 ||gg258.bet^

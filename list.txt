@@ -1205,7 +1205,6 @@
 ||fizzslots.com^
 ||wolfycasino.com^
 ||wolfycasino3.com^
-||wolfycasino.com^
 ||xcasino89.com^
 ||xcasino91.com^
 ||xcasino87.com^
@@ -1312,7 +1311,6 @@
 ||slotmadness.com^
 ||slotjerry.com^
 ||slottojam22.com^
-||slottojam55.com^
 ||slottojam55.com^
 ||wizary.com^
 ||cbet.gg^
@@ -3749,10 +3747,8 @@
 ||flagmancasino18.com^
 ||irwincasino99.com^
 ||irwincasino14.com^
-||irwincasino14.com^
 ||irwincasino16.com^
 ||irwincasino17.com^
-||lex-casino2014.com^
 ||lex-casino2014.com^
 ||lex-casino52.com^
 ||lex-casino2013.com^
@@ -3887,7 +3883,6 @@
 ||vavada-estonia.com^
 ||vavada-croatia.com^
 ||vavadapln.com^
-||spinrodeo.us^
 ||spinrodeo.us^
 ||hitnspin237.com^
 ||57hitnspin.com^
@@ -4170,3 +4165,39 @@
 ||bigazart70.com^
 ||bigazart52.com^
 ||22bet.ελ^
+||bounty-casino44.com ^
+||vavada-bgr.com  ^
+||spin-city-casino.site ^
+||flagman-casino1.com ^
+||crownzino.com ^
+||spinrodeo.us ^
+||1wagec.com^
+||1waruz.com^
+||1wadsk.com^
+||1wagbt.com^
+||1wanuj.com^
+||1wawlz.com^
+||1wabnd.com^
+||1waewn.com^
+||1wbely.com^
+||1wahic.com^
+||1walqw.com^
+||1wabtq.com^
+||1wagjm.com^
+||1wagkq.com^
+||1wanxo.com^
+||1waskh.com^
+||1wagsa.com^
+||1wapxi.com^
+||1warzi.com^
+||1waptp.com^
+||1wacoe.com^
+||1waxch.com^
+||1wakpt.com^
+||1wadxa.com^
+||1waikm.com^
+||1waqzi.com^
+||1waxlf.com^
+||1watlt.com^
+||1wbdtg.com^
+||1waqeq.com^
